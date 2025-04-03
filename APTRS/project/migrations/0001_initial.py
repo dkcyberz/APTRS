@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ('vulnerabilityseverity', models.CharField(max_length=300, null=True)),
                 ('cvssscore', models.FloatField(blank=True, null=True)),
                 ('cvssvector', models.CharField(default=None, max_length=300, null=True)),
-                ('status', models.CharField(choices=[('Vulnerable', 'Vulnerable'), ('Confirm Fixed', 'Confirm Fixed'), ('Accepted Risk', 'Accepted Risk')], default='Vulnerable', max_length=20)),
+                ('status', models.CharField(choices=[('Vulnerable', 'Vulnerable'), ('Confirm Fixed', 'Confirm Fixed'), ('Accepted Risk', 'Accepted Risk'), ('Complaint', 'Complaint')], default='Vulnerable', max_length=20)),
                 ('vulnerabilitydescription', models.TextField(blank=True, null=True, validators=[utils.validators.xss_validator])),
                 ('POC', models.TextField(blank=True, default=None, null=True, validators=[utils.validators.xss_validator])),
                 ('created', models.DateTimeField(auto_now_add=True, null=True)),
