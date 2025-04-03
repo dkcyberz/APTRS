@@ -144,12 +144,10 @@ class Command(BaseCommand):
     def create_report_standards(self):
         """Create predefined report standards."""
         report_standards = [
-            "OWASP Mobile TOP 10 2016",
-            "OWASP TOP 10 2017",
             "OWASP TOP 10 2021",
-	        "OWASP TOP 10 2025",
             "OWASP Mobile TOP 10 2024",
-            "Firewall Security Assessment"
+            "PCI DSS"
+		
         ]
 
         for name in report_standards:
@@ -163,16 +161,15 @@ class Command(BaseCommand):
         """Create predefined project types."""
         project_types = [
             "Web Application Penetration Testing",
-	        "API Penetration Testing",
+	    "API Penetration Testing",
             "Android Application Penetration Testing",
             "iOS Application Penetration Testing",
             "External Network Penetration Testing",
             "Internal Network Penetration Testing",
-	        "Cloud Application Penetration Testing",
-	        "Docker Application Penetration Testing",
-	        "Source Code Audit",
-	        "IOT Penetration Testing",
-            "OT Penetration Testing",
+	    "Cloud Application Penetration Testing",
+	    "Source Code Audit",
+	    "Internal Infra Vulnerability Assessment and Penetration Testing",
+	    "External Infra Vulnerability Assessment and Penetration Testing",
             "Firewall Security Assessment"
         ]
 
