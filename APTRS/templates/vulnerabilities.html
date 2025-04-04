@@ -47,8 +47,8 @@
                     {{vulnerabilities.vulnerabilitydescription| clean_html }}
                 <span>
 
-            <h3 class="vulnerabilities-details-title">Proof of Concept</h3>
-            {% if vulnerabilities.POC is not None %}
+            {% if vulnerabilities.POC %}
+                <h3 class="vulnerabilities-details-title">Proof of Concept</h3>
                 <span class=vulnerabilities-details-details>
                     {{vulnerabilities.POC|clean_html}}
                 <span>
