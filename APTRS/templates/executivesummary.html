@@ -92,9 +92,7 @@
 
                       <td>1.{{forloop.counter}}</td>
 
-                      <td>{{ retest.startdate|date:"d/m/Y" }}</td>
-
-                      <td>{{ retest.enddate|date:"d/m/Y" }}</td>
+                      <td>{{project.startdate|date:"d/m/Y" }} to {{ project.enddate|date:"d/m/Y" }}</td>
 
                       <td>
 
@@ -105,6 +103,10 @@
                         {% endfor %}
 
                       </td>
+
+                     <td>Vinoth Ramasamy</td>
+
+                     <td>Kannan Raju S</td>
 
                     </tr>
 
