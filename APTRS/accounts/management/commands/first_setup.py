@@ -145,8 +145,7 @@ class Command(BaseCommand):
         """Create predefined report standards."""
         report_standards = [
             "OWASP TOP 10 2021",
-            "OWASP Mobile TOP 10 2024",
-            "PCI DSS"
+            "OWASP Mobile TOP 10 2024"
 		
         ]
 
@@ -164,13 +163,7 @@ class Command(BaseCommand):
 	    "API Penetration Testing",
             "Android Application Penetration Testing",
             "iOS Application Penetration Testing",
-            "External Network Penetration Testing",
-            "Internal Network Penetration Testing",
-	    "Cloud Application Penetration Testing",
 	    "Source Code Audit",
-	    "Internal Infra Vulnerability Assessment and Penetration Testing",
-	    "External Infra Vulnerability Assessment and Penetration Testing",
-            "Firewall Security Assessment"
         ]
 
         for name in project_types:
